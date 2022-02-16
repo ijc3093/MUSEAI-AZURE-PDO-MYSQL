@@ -4,7 +4,7 @@
     include('head.php');
     
 
-    include('Controller.php');
+    include('controller.php');
     $db = new Controller();
 
     // $_SESSION = array(); // destroy all session data

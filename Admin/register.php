@@ -1,9 +1,9 @@
 <?php
     session_start();
-    // //include('validate.php');
-    require('./Controller.php');
-    require('../Admin/helpers/session_helper.php');
-    
+   
+    include('./helpers/session_helper.php');
+    include('controller.php');
+
     $userModel = new Controller();
 
     class Users {

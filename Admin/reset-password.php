@@ -3,8 +3,8 @@
     session_start();
     use PHPMailer\PHPMailer\PHPMailer;
     // //include('validate.php');
-    require('Controller.php');
-    include_once './helpers/session_helper.php';
+    include('controller.php');
+    include('./helpers/session_helper.php');
 ?>
     <h1 class="header">Reset Password</h1>
 

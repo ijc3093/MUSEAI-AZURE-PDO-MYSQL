@@ -3,8 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 
 //Import
-require_once './Controller.php';
-require_once './helpers/session_helper.php';
+include('./helpers/session_helper.php');
+include('controller.php');
 
 //Require PHP Mailer
 require_once './PHPMailer/src/PHPMailer.php';

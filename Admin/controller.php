@@ -22,8 +22,7 @@
 
 <?php
 
-    require_once '../Config/database.php';
-    //require_once '../Config/config.php';
+    include('./Config/database.php');
 
     class Controller{
 

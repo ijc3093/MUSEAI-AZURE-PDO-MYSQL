@@ -22,46 +22,46 @@ $connectionInfo = array(
     "TrustServerCertificate" => 0
 );
 $serverName = "tcp:servermuseai.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+//$conn = sqlsrv_connect($serverName, $connectionInfo);
 
-$connect = new mysql
+//$connect = new mysql
 
-if($conn === false)
-{
-    die(print_r(sqlsrv_errors(), true));
-}
-if(isset($_GET['action']))
-{
-    if($_GET['action'] == 'add')
-    {
-        /*Insert data.*/
-        $insertSql = "INSERT INTO empTable (emp_id,name,education,email)
-                      VALUES (?,?,?,?)";
-        $params = array(&$_POST['t_emp_id'],
-                        &$_POST['t_name'],
-                        &$_POST['t_education'],
-                        &$_POST['t_email']);
-        $stmt = sqlsrv_query($conn, $insertSql, $params);
-        if($stmt === false)
-        {
-            /*Handle the case of a duplicte e-mail address.*/
-            $errors = sqlsrv_errors();
-            if($errors[0]['code'] == 2601)
-            {
-                echo "The e-mail address you entered has already been used.</br>";
-            }
-            /*Die if other errors occurred.*/
-            else
-            {
-                die(print_r($errors, true));
-            }
-        }
-        else
-        {
-            echo "Registration complete.</br>";
-        }
-    }
-}
+// if($conn === false)
+// {
+//     die(print_r(sqlsrv_errors(), true));
+// }
+// if(isset($_GET['action']))
+// {
+//     if($_GET['action'] == 'add')
+//     {
+//         /*Insert data.*/
+//         $insertSql = "INSERT INTO empTable (emp_id,name,education,email)
+//                       VALUES (?,?,?,?)";
+//         $params = array(&$_POST['t_emp_id'],
+//                         &$_POST['t_name'],
+//                         &$_POST['t_education'],
+//                         &$_POST['t_email']);
+//         $stmt = sqlsrv_query($conn, $insertSql, $params);
+//         if($stmt === false)
+//         {
+//             /*Handle the case of a duplicte e-mail address.*/
+//             $errors = sqlsrv_errors();
+//             if($errors[0]['code'] == 2601)
+//             {
+//                 echo "The e-mail address you entered has already been used.</br>";
+//             }
+//             /*Die if other errors occurred.*/
+//             else
+//             {
+//                 die(print_r($errors, true));
+//             }
+//         }
+//         else
+//         {
+//             echo "Registration complete.</br>";
+//         }
+//     }
+// }
 /*Display registered people.*/
 /*$sql = "SELECT * FROM empTable ORDER BY name";
 $stmt = sqlsrv_query($conn, $sql);

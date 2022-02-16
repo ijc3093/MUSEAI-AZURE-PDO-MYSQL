@@ -5,7 +5,7 @@
 
     // $_SESSION = array(); // destroy all session data
     // session_destroy(); // compelte erase session
-    include('Controller.php');
+    include('controller.php');
     $db = new Controller();
 
   //delete data from museai

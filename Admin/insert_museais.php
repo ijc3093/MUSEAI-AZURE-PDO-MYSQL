@@ -2,7 +2,7 @@
 
   include('head.php');
 
-  include('Controller.php');
+  include('controller.php');
   
   $db = new Controller();
   
