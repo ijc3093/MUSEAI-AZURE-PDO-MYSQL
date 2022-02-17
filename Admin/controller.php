@@ -1,14 +1,14 @@
 <?php 
     // DB credentials.
-    define('DB_HOST','127.0.0.1');
-    define('DB_USER','root');
-    define('DB_PASS','Merciful$100');
-    define('DB_NAME','museai');
+    // define('DB_HOST','127.0.0.1');
+    // define('DB_USER','root');
+    // define('DB_PASS','Merciful$100');
+    // define('DB_NAME','museai');
 
-    // define('DB_HOST','catic21museai.mysql.database.azure.com');
-    // define('DB_USER','catic21@catic21museai');
-    // define('DB_PASS','Merciful#100');
-    // define('DB_NAME','testDB');
+    define('DB_HOST','catic21museai.mysql.database.azure.com');
+    define('DB_USER','catic21@catic21museai');
+    define('DB_PASS','Merciful#100');
+    define('DB_NAME','museai');
 
 
     // Establish database connection.
@@ -28,15 +28,15 @@
 
         private $dbh;
         
-        private $server = "127.0.0.1";
-        private $username = "root";
-        private $password = "Merciful$100";
-        private $dbname = "museai";
+        // private $server = "127.0.0.1";
+        // private $username = "root";
+        // private $password = "Merciful$100";
+        // private $dbname = "museai";
 
-        // private $server = "catic21museai.mysql.database.azure.com";
-        // private $username = "catic21@catic21museai";
-        // private $password = "Merciful#100";
-        // private $dbname = "shopping";
+        private $server = "catic21museai.mysql.database.azure.com";
+        private $username = "catic21@catic21museai";
+        private $password = "Merciful#100";
+        private $dbname = "museai";
 
         private $stmt;
         //Constructor

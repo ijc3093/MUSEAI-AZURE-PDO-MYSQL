@@ -7,16 +7,16 @@
     * Return rows and results
 */
     class Config2 {
-        private $host = '127.0.0.1';
-        private $user = 'root';
-        private $pass = 'Merciful$100';
+        // private $host = '127.0.0.1';
+        // private $user = 'root';
+        // private $pass = 'Merciful$100';
+        // private $dbname = 'museai';
+
+
+        private $host = 'catic21museai.mysql.database.azure.com';
+        private $user = 'catic21@catic21museai';
+        private $pass = 'Merciful#100';
         private $dbname = 'museai';
-
-
-        // private $host = 'catic21museai.mysql.database.azure.com');
-        // private $user = 'catic21@catic21museai');
-        // private $pass = 'Merciful#100');
-        // private $dbname = 'testDB');
 
 
         //Will be the PDO object
