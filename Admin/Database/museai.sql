@@ -1,11 +1,12 @@
-DROP DATABASE IF EXISTS museai;
+-- DROP DATABASE IF EXISTS museai;
 
-CREATE DATABASE IF NOT EXISTS museai;
+-- CREATE DATABASE IF NOT EXISTS museai;
 
-SHOW DATABASES;
+-- SHOW DATABASES;
 
-USE museai;
+-- USE museai;
 
+-- CREATE TABLE images ( id INT(11) AUTO_INCREMENT PRIMARY KEY, image LONGBLOB NOT NULL );
 
 -- -----------------------------------------------------
 -- Table `user`
@@ -19,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `username` VARCHAR(100) NOT NULL,
   `password` VARCHAR(100) NOT NULL,
   `fullname` VARCHAR(200) NOT NULL,
-  `upload_image` VARCHAR(50) NOT NULL,
+  `upload_image` LONGBLOB NOT NULL,
   `date` VARCHAR(50) NOT NULL,
   `time` VARCHAR(50) NOT NULL,
   `role` INT NULL,
